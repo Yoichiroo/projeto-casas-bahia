@@ -1,0 +1,107 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root {
+    --fonte01: "Roboto";
+    --cor0: white;
+    --cor1: black;
+    --cor2: #0031cb;
+    --cor3: #eb1a3a;
+    --corFundo: #d9d9d9;
+    --cor4: #0b0c0c;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: var(--fonte01);
+}
+
+header {
+    font-size: 1.5em;
+    background-color: var(--cor2);
+    color: var(--cor0);
+    padding: 5px;
+    text-align: center;
+    border-bottom: 5px solid var(--cor3);
+}
+
+main {
+    height: 100vh;
+    position: relative;
+    background-color: var(--corFundo);
+}
+
+main form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--cor2);
+    width: 60vw;
+    height: 80vh;
+    text-align: center;
+    color: var(--cor0);
+    border-radius: 20px;
+    font-size: 1.2em;
+}
+
+form h2 { margin: 50px 0px; }
+
+form div.labelEmail, div.labelPassword {
+    width: 100%;
+    margin: 20px auto;
+}
+
+form label {
+    width: 60%;
+    margin-bottom: 10px;
+    display: inline-block;
+    text-align: left;
+}
+
+form input {
+    width: 60%;
+    height: 40px;
+    border: none;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    padding-left: 15px;
+}
+
+form div.labelSubmit p{
+    width: 60%;
+    display: inline-block;
+    text-align: left;
+}
+
+form input[type="submit"] {
+    display: block;
+    margin: 20px auto;
+    height: 60px;
+    font-size: 0.8em;
+    color: var(--cor0);
+    background-color: var(--cor3);
+    transition: .2s;
+}
+
+form input[type="submit"]:hover {
+    background-color: var(--corFundo);
+    color: var(--cor1);
+    cursor: pointer;
+    font-weight: 700;
+}
+
+span {
+    color: var(--cor3);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+footer {
+    padding: 10px;
+    background-color: var(--cor4);
+    color: var(--cor0);
+    text-align: center;
+}
